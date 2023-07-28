@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Old Twitter Bird Extension",
+  "version": "1.0",
+  "description": "Replace the new Twitter logo with the old Twitter bird icon.",
+  "permissions": ["scripting"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "icons/ext_icon_16.png",
+    "48": "icons/ext_icon_48.png",
+    "128": "icons/ext_icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["contentScript.js"],
+      "css": ["style.css"]
+    }
+  ]
+}

@@ -1,9 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Old Twitter Bird Extension",
+  "name": "Classic Twitter Bird Extension",
   "version": "1.0",
   "description": "Replace the new Twitter logo with the old Twitter bird icon.",
-  "permissions": ["scripting"],
   "action": {
     "default_popup": "popup.html"
   },
